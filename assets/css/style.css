@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primaryColor: #099d1f;
+    --secondColor: #18181D;
+    --thirdColor: #033b0f;
+    --fourthColor: #8A2BE2;
+    --textColor: #fff;
+    --backgroundColor: #000000;
+    --fontLogo: 'Karla', sans serif;
+    --fontList: 'Open sans', sans serif;
+    --fontMain: 'Tinos', sans serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #a264dd, #FFF, #FFF, #FFF, #FFF, #FFF);
+    font-family: 'Reddit sans', sans-serif;
+}
+
+
+header {
+    height: 70px;
+    background: transparent;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transition: all 0.2s;
+    box-sizing: border-box;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.header:hover {
+    background-color: #ffffffaa;
+}
+
+.logo {
+    font-family: 'Karla', sans-serif;
+    font-weight: 800;
+    color: #000000;
+    font-size: 2.5rem;
+    width: 250px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    margin-right: 50px;
+}
+
+.logo:hover {
+    transform: scale(0.96);
+    color: #8A2BE2;
+}
+
+.list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    padding: 25px;
+    gap: 60px;
+
+}
+
+.list a {
+    font-family: 'Karla', sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--backgroundColor);
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.list a:hover {
+    color: var(--fourthColor);
+    transform: scale(0.96);
+}
+
+.btn-menu {
+    position: absolute;
+    right: 50px;
+    background: transparent;
+    border: 1px solid transparent;
+    display: none;
+    z-index: 10001;
+}
+
+.btn-menu i {
+    font-size: 40px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-menu i:hover {
+    color: #8A2BE2;
+    transform: scale(0.96);
+}
+
+.mainImage img {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 125px;
+
+    -webkit-mask-image: linear-gradient(to top,
+            transparent 0%,
+            black 70%,
+            black 100%);
+    mask-image: linear-gradient(to top,
+            transparent 0%,
+            black 70%,
+            black 100%);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.title-main {
+    color: #000000;
+    font-family: 'Ancizar Serif', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    padding: 12px 8px;
+    margin-top: 85px;
+}
+
+.title-main span {
+    color: var(--primaryColor);
+}
+
+.miniTitle {
+    color: #18181dc0;
+    font-size: 1.1rem;
+    font-family: 'Reddit Sans', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    line-height: 1.4;
+}
+
+.verMais {
+    padding: 15px 0;
+    width: 100px;
+    color: #fff;
+    background-color: #099d1f;
+    font-family: 'Karla', sans-serif;
+    font-size: 15px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+main button:hover {
+    transform: scale(0.96);
+    background-color: #8A2BE2;
+}
+
+.main-content {
+    border-bottom: 3px solid #8A2BE2;
+    border-top: 3px solid #8A2BE2;
+    border-radius: 25px;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 12px;
+}
+
+.main-content .info1 {
+    padding: 10px;
+    max-width: 740px;
+    border-radius: 12px;
+}
+
+.info1 h2 {
+    margin-bottom: 22px;
+
+    text-align: center;
+    font-family: 'Ancizar Serif', serif;
+    font-size: 2rem;
+}
+
+.info1 p {
+    font-size: 18px;
+    line-height: 1.4;
+
+}
+
+.main-content .info2 {
+    padding: 10px;
+    max-width: 750px;
+}
+
+.info2 h2 {
+    text-align: center;
+    font-family: 'Ancizar Serif', serif;
+    font-size: 2rem;
+    margin-bottom: 22px;
+}
+
+.info2 p {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.main-content .info3 {
+    padding: 10px;
+    max-width: 750px;
+    border-radius: 12px;
+
+}
+
+.info3 h2 {
+    text-align: center;
+    font-family: 'Ancizar Serif', serif;
+    font-size: 2rem;
+    margin-bottom: 22px;
+}
+
+.info3 p {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.custom-alert {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-alert-content {
+    background: #fff;
+    color: #222;
+    padding: 32px 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.278);
+    text-align: center;
+    min-width: 220px;
+    position: relative;
+    font-size: 1.2rem;
+    font-family: 'Karla', sans-serif;
+}
+
+.close-alert {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 1.5rem;
+    color: #8A2BE2;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.close-alert:hover {
+    color: #099d1f;
+}
+
+footer {
+    background-color: #000000;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copy p {
+    color: #ffffff9c;
+}
+
+
+/* Responsividade para tablets e celulares */
+@media (max-width: 1024px) {
+    .mainImage img {
+        width: 250px;
+        height: 250px;
+        margin-left: 0;
+    }
+
+    .main-content,
+    .main-content .info1,
+    .main-content .info2,
+    .main-content .info3 {
+        max-width: 95vw;
+        padding: 8px;
+    }
+
+    .title-main {
+        font-size: 2.5rem;
+        margin-top: 60px;
+        padding: 8px 2px;
+    }
+
+    .miniTitle {
+        font-size: 1rem;
+        margin: 12px;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 12px 8px;
+    }
+
+    .logo {
+        font-size: 2rem;
+        width: auto;
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    .list {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 0;
+    }
+
+    .main {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .custom-alert-content {
+        min-width: 160px;
+        padding: 20px 8px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .mainImage img {
+        width: 160px;
+        height: 160px;
+        margin-left: 60px;
+    }
+
+    .main-content,
+    .main-content .info1,
+    .main-content .info2,
+    .main-content .info3 {
+        max-width: 99vw;
+        padding: 4px;
+    }
+
+    .miniTitle {
+        font-size: 12px;
+        line-height: 1;
+    }
+
+    .main-content p {
+        font-size: 12px;
+    }
+
+    .title-main {
+        font-size: 1.5rem;
+        margin-top: 40px;
+        padding: 6px 1px;
+    }
+
+    .miniTitle {
+        font-size: 0.95rem;
+        margin: 8px;
+        line-height: 1.7;
+    }
+
+    .verMais {
+        width: 90px;
+        font-size: 13px;
+        padding: 10px 0;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 8px 2px;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+        width: auto;
+        margin-right: 0;
+        justify-content: center;
+    }
+
+
+    .main {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .custom-alert-content {
+        min-width: 120px;
+        padding: 12px 2px;
+        font-size: 0.95rem;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 12px;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .copy {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .miniTitle {
+        font-size: 11px;
+        margin: 8px;
+        line-height: 1.1;
+        padding: 15px;
+    }
+
+    .btn-menu {
+        display: block;
+        font-size: 15px;
+    }
+
+    .btn-menu i {
+        font-size: 30px;
+    }
+
+    .list {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        padding: 150px 60px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 100%;
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        background-color: #FFF;
+        transition: all .5s ease-in-out;
+    }
+
+    .list a {
+        display: block;
+        padding: 10px;
+        margin: 0 0 5px 0;
+        font-size: 1.7rem;
+        border-radius: 12px;
+    }
+
+    .list a:hover {
+        padding: 10px;
+        font-size: 1.7rem;
+        background-color: #8A2BE2;
+        color: #FFF;
+        border-radius: 12px;
+    }
+
+    .list.open {
+        left: 0;
+    }
+
+    .main-content .info1,
+    .main-content .info2,
+    .main-content .info3 {
+        max-width: 90vw;
+        padding: 4px;
+    }
+
+    footer img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .copy {
+        gap: 20px;
+        padding: 8px;
+    }
+}
