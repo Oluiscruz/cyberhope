@@ -35,6 +35,8 @@ header {
     box-sizing: border-box;
     padding-left: 24px;
     padding-right: 24px;
+
+    width: 100%;
 }
 
 .header:hover {
@@ -189,7 +191,7 @@ main button:hover {
     border-bottom: 3px solid #8A2BE2;
     border-top: 3px solid #8A2BE2;
     border-radius: 25px;
-    width: 80%;
+    width: 100%;
     margin-top: 100px;
     display: flex;
     flex-direction: column;
