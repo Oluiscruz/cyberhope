@@ -19,7 +19,7 @@
 }
 
 body {
-    background: linear-gradient(to bottom, #a264dd, #FFF, #FFF, #FFF, #FFF, #FFF);
+    background: linear-gradient(to bottom, #a264dd, #FFF, #FFF, #FFF, #FFF, #FFF, #fff);
     font-family: 'Reddit sans', sans-serif;
 }
 
@@ -100,6 +100,7 @@ header {
     font-size: 40px;
     cursor: pointer;
     transition: all 0.2s;
+    color: #000000;
 }
 
 .btn-menu i:hover {
@@ -151,7 +152,7 @@ header {
 
 .miniTitle {
     color: #18181dc0;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-family: 'Reddit Sans', sans-serif;
     text-align: center;
     display: flex;
@@ -183,13 +184,13 @@ main button:hover {
     background-color: #8A2BE2;
 }
 
-.main-content {
+.main-content,
+.main-content-two {
     border-bottom: 3px solid #8A2BE2;
     border-top: 3px solid #8A2BE2;
     border-radius: 25px;
-    width: 100%;
+    width: 80%;
     margin-top: 100px;
-    margin-bottom: 130px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -198,60 +199,34 @@ main button:hover {
     padding: 12px;
 }
 
-.main-content .info1 {
-    padding: 10px;
-    max-width: 740px;
-    border-radius: 12px;
-}
 
-.info1 h2 {
-    margin-bottom: 22px;
-
-    text-align: center;
-    font-family: 'Ancizar Serif', serif;
-    font-size: 2rem;
-}
-
-.info1 p {
-    font-size: 18px;
-    line-height: 1.4;
-
-}
-
-.main-content .info2 {
-    padding: 10px;
-    max-width: 750px;
-}
-
-.info2 h2 {
-    text-align: center;
-    font-family: 'Ancizar Serif', serif;
-    font-size: 2rem;
-    margin-bottom: 22px;
-}
-
-.info2 p {
-    font-size: 18px;
-    line-height: 1.4;
-}
-
-.main-content .info3 {
+.main-content-two .info-games,
+.info1,
+.info2,
+.info3 {
     padding: 10px;
     max-width: 750px;
     border-radius: 12px;
-
 }
 
+.info-games h2,
+.info1 h2,
+.info2 h2,
 .info3 h2 {
+    margin-bottom: 22px;
+
     text-align: center;
     font-family: 'Ancizar Serif', serif;
     font-size: 2rem;
-    margin-bottom: 22px;
 }
 
+.info-games p,
+.info1 p,
+.info2 p,
 .info3 p {
     font-size: 18px;
     line-height: 1.4;
+
 }
 
 .custom-alert {
@@ -295,6 +270,32 @@ main button:hover {
     color: #099d1f;
 }
 
+.games-logo{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 750px;
+}
+.games-logo .games-img{
+    padding: 10px;
+    display: flex;
+    margin: 12px;
+}
+.games-logo .games-img img{
+    width: 250px;
+    height: 170px;
+    display: flex;
+    margin: 12px;
+    padding: 12px;
+    transition: all 0.2s ease-in;
+}
+.games-logo .games-img img:hover{
+    background-color: #8A2BE2;
+    border-radius: 12px;
+    transform: scale(0.96);
+}
+
 footer {
     background-color: #000000;
     color: #FFF;
@@ -312,7 +313,26 @@ footer {
 .copy p {
     color: #ffffff9c;
 }
+.fonts{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.fonts ul {
+    margin: 4px;
+    list-style-type: disc;
+}
 
+.fonts ul li {
+    margin: 8px;
+
+}
+
+.fonts ul li a {
+    text-decoration: none;
+    color: #0202ff;
+}
 
 /* Responsividade para tablets e celulares */
 @media (max-width: 1024px) {
@@ -323,12 +343,33 @@ footer {
     }
 
     .main-content,
+    .main-content-two,
     .main-content .info1,
     .main-content .info2,
-    .main-content .info3 {
+    .main-content .info3
+    .main-content-two .info-games,
+    .games-logo {
         max-width: 95vw;
         padding: 8px;
     }
+
+    .games-logo .games-img{
+    padding: 5px;
+    display: flex;
+    margin: 8px;
+}
+    .games-logo .games-title h3{
+    font-size: 1.2rem;
+
+}
+.games-logo .games-img img{
+    width: 60px;
+    height: 50px;
+    display: flex;
+    margin: 8px;
+    padding: 8px;
+    transition: all 0.2s ease-in;
+}
 
     .title-main {
         font-size: 2.5rem;
@@ -337,7 +378,7 @@ footer {
     }
 
     .miniTitle {
-        font-size: 1rem;
+        font-size: 1.3rem;
         margin: 12px;
     }
 
@@ -375,6 +416,11 @@ footer {
         padding: 20px 8px;
         font-size: 1rem;
     }
+    .mainImage img {
+        width: 300px;
+        height: 300px;
+        margin-left: 115px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -385,20 +431,25 @@ footer {
     }
 
     .main-content,
+    .main-content-two,
     .main-content .info1,
     .main-content .info2,
-    .main-content .info3 {
+    .main-content .info3,
+    .main-content-two .info-games,
+    .games-logo {
         max-width: 99vw;
         padding: 4px;
     }
 
+
     .miniTitle {
-        font-size: 12px;
+        font-size: 1.3rem;
         line-height: 1;
     }
 
-    .main-content p {
-        font-size: 12px;
+    .main-content p,
+    .main-content-two p {
+        font-size: 15px;
     }
 
     .title-main {
@@ -408,7 +459,6 @@ footer {
     }
 
     .miniTitle {
-        font-size: 0.95rem;
         margin: 8px;
         line-height: 1.7;
     }
@@ -465,7 +515,7 @@ footer {
 
 @media (max-width: 950px) {
     .miniTitle {
-        font-size: 11px;
+        font-size: 1.3rem;
         margin: 8px;
         line-height: 1.1;
         padding: 15px;
@@ -518,7 +568,9 @@ footer {
 
     .main-content .info1,
     .main-content .info2,
-    .main-content .info3 {
+    .main-content .info3,
+    .main-content-two .info-games,
+    .games-logo {
         max-width: 90vw;
         padding: 4px;
     }
